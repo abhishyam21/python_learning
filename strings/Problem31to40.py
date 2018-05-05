@@ -25,9 +25,17 @@ print("--------------Problem 36 End--------------------------")
 
 # problem 37
 
+x = 21
+
+print("Left aligned :  {:<10d}".format(x))
+print("Right aligned: {:10d}".format(x))
+print("Center aligned:{:^10d}".format(x))
 print("--------------Problem 37 End--------------------------")
 
 # problem 38
+
+str1 = 'The quick brown fox jumps over the lazy dog.'
+print(str1.count("fox"))
 
 print("--------------Problem 38 End--------------------------")
 
