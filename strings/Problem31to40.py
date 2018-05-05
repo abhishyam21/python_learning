@@ -1,5 +1,10 @@
 # problem 31
 
+x = 3.123
+y = -12.9999999
+print("Formatted Number(right padding, width 2): "+"{:+.2f}".format(x))
+print("Formatted Number(right padding, width 6): "+"{:+.2f}".format(y))
+
 print("--------------Problem 31 End--------------------------")
 
 # problem 32
