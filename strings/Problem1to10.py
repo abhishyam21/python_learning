@@ -88,22 +88,81 @@ print(chars_mix_up('abc', 'xyz'))
 
 print("--------------Problem 5 End--------------------------")
 
+
 # problem 6
+
+
+def add_string(input):
+    lenght = len(input)
+    if lenght < 3:
+        return input
+    if input.endswith("ing"):
+        return input + "ly"
+    else:
+        return input + "ing"
+
+
+print(add_string('ab'))
+print(add_string('abc'))
+print(add_string('string'))
 
 print("--------------Problem 6 End--------------------------")
 
+
 # problem 7
+
+def not_poor(input):
+    snot = input.find('not')
+    sbad = input.find('poor')
+    print(snot)
+    print(sbad)
+    if snot < sbad:
+        input = input.replace(input[snot:(sbad + 4)], "good")
+    return input
+
+
+print(not_poor('The lyrics is not that poor!'))
 
 print("--------------Problem 7 End--------------------------")
 
+
 # problem 8
+
+def find_longest_word(input):
+    list = []
+    for i in input:
+        list.append((len(i), i))
+    list.sort()
+    return list[-1][1]
+
+
+print(find_longest_word(["PHP", "Exercises", "Backend"]))
 
 print("--------------Problem 8 End--------------------------")
 
+
 # problem 9
+
+def remove_char(input, x):
+    length = len(input)
+    if length > x:
+        return input[:x] + input[x + 1:]
+
+
+print(remove_char('Python', 0))
+print(remove_char('Python', 3))
+print(remove_char('Python', 5))
 
 print("--------------Problem 9 End--------------------------")
 
+
 # problem 10
+
+def change_sring(input):
+    return input[-1:] + input[1: -1]+input[:1]
+
+
+print(change_sring('abcd'))
+print(change_sring('12345'))
 
 print("--------------Problem 10 End--------------------------")
