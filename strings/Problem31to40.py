@@ -4,14 +4,28 @@ print("--------------Problem 31 End--------------------------")
 
 # problem 32
 
+x = 3.123
+y = -12.9999999
+print("Formatted Number(right padding, width 2): "+"{: .0f}".format(x))
+print("Formatted Number(right padding, width 6): "+"{: .0f}".format(y))
 
 print("--------------Problem 32 End--------------------------")
 
 # problem 33
 
+x = 3
+y = 123
+print("Formatted Number(right padding, width 2): "+"{:0> 3d}".format(x))
+print("Formatted Number(right padding, width 6): "+"{:0> 6d}".format(y))
+
 print("--------------Problem 33 End--------------------------")
 
 # problem 34
+
+x = 3
+y = 123
+print("Formatted Number(right padding, width 2): "+"{:*< 3d}".format(x))
+print("Formatted Number(right padding, width 6): "+"{:*< 6d}".format(y))
 
 print("--------------Problem 34 End--------------------------")
 
