@@ -17,16 +17,24 @@ print("--------------Problem 34 End--------------------------")
 
 # problem 35
 
+x = 3000000
+y = 30000000
+
+print("Formatted Number with comma separator: "+"{:,}".format(x));
+print("Formatted Number with comma separator: "+"{:,}".format(y));
+
 print("--------------Problem 35 End--------------------------")
 
 # problem 36
-
+x = 0.25
+y = -0.25
+print("Formatted Number with percentage: "+"{:.2%}".format(x));
+print("Formatted Number with percentage: "+"{:.2%}".format(y));
 print("--------------Problem 36 End--------------------------")
 
 # problem 37
 
 x = 21
-
 print("Left aligned :  {:<10d}".format(x))
 print("Right aligned: {:10d}".format(x))
 print("Center aligned:{:^10d}".format(x))
