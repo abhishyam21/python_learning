@@ -74,6 +74,11 @@ print("--------------Problem 46 End--------------------------")
 
 # problem 47
 
+def lower_case(input, n):
+    return input[0:n].lower()+input[n:]
+
+
+print(lower_case("W3RESOURCE.COM",4))
 print("--------------Problem 47 End--------------------------")
 
 # problem 48
