@@ -105,11 +105,11 @@ print(dup_items(a))
 
 print("--------------Problem 7 End--------------------------")
 
+
 # problem 8
 
 def is_empty_list1(input):
     return len(input) == 0
-
 
 
 def is_empty_list2(input):
@@ -126,10 +126,29 @@ print("--------------Problem 8 End--------------------------")
 
 # problem 9
 
+original_list = [10, 22, 44, 23, 4]
+new_list = list(original_list)
+print(original_list)
+print(new_list)
 
 print("--------------Problem 9 End--------------------------")
 
+
 # problem 10
 
+def long_words1(n, input):
+    list = []
+    for i in input.split():
+        if len(i) > n:
+            list.append(i)
+    return list
+
+
+def long_words2(n, input):
+    return [x for x in input.split() if len(x) > n]
+
+
+print(long_words1(3, "The quick brown fox jumps over the lazy dog"))
+print(long_words2(3, "The quick brown fox jumps over the lazy dog"))
 
 print("--------------Problem 10 End--------------------------")
