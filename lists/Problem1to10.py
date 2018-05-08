@@ -77,27 +77,57 @@ print("--------------Problem 5 End--------------------------")
 
 # problem 6
 
+def last(n):
+    return n[-1]
+
+
+def sort_list_last(input):
+    return sorted(input, key=last)
+
+
+print(sort_list_last([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
 
 print("--------------Problem 6 End--------------------------")
 
 
 # problem 7
 
+def dup_items(input):
+    dict = set()
+    for i in input:
+        dict.add(i)
+
+    return dict
+
+
+a = [10, 20, 30, 20, 10, 50, 60, 40, 80, 50, 40]
+print(dup_items(a))
 
 print("--------------Problem 7 End--------------------------")
 
-
 # problem 8
 
+def is_empty_list1(input):
+    return len(input) == 0
+
+
+
+def is_empty_list2(input):
+    return not input
+
+
+a = [10, 20, 30, 20, 10, 50, 60, 40, 80, 50, 40]
+print(is_empty_list1(a))
+print(is_empty_list1([]))
+print(is_empty_list2(a))
+print(is_empty_list2([]))
 
 print("--------------Problem 8 End--------------------------")
-
 
 # problem 9
 
 
 print("--------------Problem 9 End--------------------------")
-
 
 # problem 10
 
