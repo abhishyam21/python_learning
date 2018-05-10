@@ -91,20 +91,46 @@ print("--------------Problem 35 End--------------------------")
 
 # problem 36
 
+x = 100
+print(format(id(x), 'x'))
+s = 'w3resource'
+print(format(id(s), 'x'))
+
 print("--------------Problem 36 End--------------------------")
 
 # problem 37
 
+color1 = "Red", "Green", "Orange", "White"
+color2 = "Black", "Green", "White", "Pink"
+print(color2 and color1)  # if 1st one is true then returns 2nd one
+print(color2 or color1)
+print(set(color1) & set(color2))
+print(set(color1) | set(color2))
+
+print("--------------Problem 37 End--------------------------")
+
 
 # problem 38
+# TODO
+def replace2copy(list):
+    for i in range(0, len(list), 2):
+        temp = list[i + 1]
+        list.insert(i + 1, list[i])
+        list.insert(i, temp)
+    return list
 
+
+list = [0, 1, 2, 3, 4, 5]
+print(replace2copy(list))
 print("--------------Problem 38 End--------------------------")
 
 # problem 39
 
-
+list = [11, 33, 50]
+print(''.join(map(str, list)))
+print(map(str, list))
 print("--------------Problem 39 End--------------------------")
 
 # problem 40
-
+# TODO
 print("--------------Problem 40 End--------------------------")
