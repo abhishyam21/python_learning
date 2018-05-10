@@ -79,6 +79,11 @@ print("--------------Problem 17 End--------------------------")
 
 # problem 18
 
+import itertools
+
+print(list(itertools.permutations([1, 2, 3])))
+print(list(itertools.permutations([1, 2, 3, 4])))
+
 print("--------------Problem 18 End--------------------------")
 
 # problem 19
