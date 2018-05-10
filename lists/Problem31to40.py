@@ -63,9 +63,20 @@ print(sub_lists(l2))
 
 print("--------------Problem 33 End--------------------------")
 
-# problem 34
-# TODO
 
+# problem 34
+
+def prime_eratosthenes(n):
+    list , result = [], []
+    for i in range(2, n + 1):
+        if i not in list:
+            result.append(i)
+            for j in range(i+i, n + 1, i):
+                list.append(j)
+    return result
+
+
+print(prime_eratosthenes(100))
 print("--------------Problem 34 End--------------------------")
 
 
@@ -100,12 +111,13 @@ print("--------------Problem 36 End--------------------------")
 
 # problem 37
 
-color1 = "Red", "Green", "Orange", "White"
+color1 = "Red", "Green", "Orange", "White"  # this is tuple not list
 color2 = "Black", "Green", "White", "Pink"
 print(color2 and color1)  # if 1st one is true then returns 2nd one
 print(color2 or color1)
 print(set(color1) & set(color2))
 print(set(color1) | set(color2))
+print(type(color2))
 
 print("--------------Problem 37 End--------------------------")
 
