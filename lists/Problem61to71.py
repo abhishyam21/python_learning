@@ -1,18 +1,28 @@
 # problem 61
 
+print([{} for i in range(5)])
 
 print("--------------Problem 61 End--------------------------")
 
 # problem 62
 
+num = [1, 2, 3, 4, 5]
+# TODO
+
 print("--------------Problem 62 End--------------------------")
 
 # problem 63
 
+num = [1, 2, 3, 4]
+print(['stu' + str(x) for x in num])
 print("--------------Problem 63 End--------------------------")
 
 # problem 64
 
+num = [1, 2, 3]
+color = ['red', 'while', 'black']
+
+print([(x, y) for x, y in zip(num, color)])
 print("--------------Problem 64 End--------------------------")
 
 # problem 65
